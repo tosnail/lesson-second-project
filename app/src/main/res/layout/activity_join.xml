@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".JoinActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="냉장고"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+        <TableRow
+            android:layout_marginHorizontal="50dp"
+            android:background="@drawable/round_gray_border"
+            android:padding="1dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/round_blue_loginimage"
+                android:src="@drawable/ic_person" />
+            <EditText
+                android:id="@+id/edtUserid"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:background="@drawable/round_right_login"
+                android:paddingLeft="10dp"
+                android:hint="userId"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray_border"
+            android:padding="1dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/round_blue_loginimage"
+                android:src="@drawable/ic_round_vpn_key_24" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:layout_weight="5"
+                android:background="@drawable/round_right_login"
+                android:paddingLeft="10dp"
+                android:hint="password"
+                android:textSize="20dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_join"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/round_blue_btn"
+        android:text=" 회원가입"
+        android:textColor="#FFFFFF">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="이미 가입하셨나요?"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_to_login"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_gray_btn"
+            android:text="로그인"
+            android:textColor="#191919">
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
